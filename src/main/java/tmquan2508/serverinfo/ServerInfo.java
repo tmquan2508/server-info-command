@@ -7,12 +7,14 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.impl.command.client.ClientCommandInternals;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.text.ClickEvent;
 import net.minecraft.text.HoverEvent;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.SaveProperties;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -97,7 +99,6 @@ public class ServerInfo implements ModInitializer {
         print(createEntry("Players", String.format("%d", mc.getNetworkHandler().getPlayerList().size()), false));
 
         if (mc.world != null && mc.player != null) {
-            print(createEntry("Brand", mc.player.getServerBrand() != null ? mc.player.getServerBrand() : "unknown", true));
             print(createEntry("Difficulty", mc.world.getDifficulty().getTranslatableName(), false));
             print(createEntry("Local difficulty", String.format("%.2f", mc.world.getLocalDifficulty(mc.player.getBlockPos()).getLocalDifficulty()), false));
             print(createEntry("Day", String.format("%d", mc.world.getTimeOfDay() / 24000L), false));
