@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "serverinfo",
+  "version": "${version}",
+
+  "name": "Server Info Command",
+  "description": "Get server information by command '/server'",
+  "authors": [
+    "Cloudburst"
+  ],
+  "contact": {
+    "sources": "https://github.com/tmquan2508/server-info-command"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/serverinfo/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "tmquan2508.serverinfo.ServerInfo"
+    ]
+  },
+  "mixins": [
+    "serverinfo.mixins.json"
+  ],
+
+  "depends": {
+    "fabric": "*",
+    "minecraft": "~${mc_version}"
+  }
+}
