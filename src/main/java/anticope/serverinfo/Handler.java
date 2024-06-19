@@ -1,4 +1,4 @@
-package anticope.serverinfo;
+package tmquan2508.serverinfo;
 
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.network.packet.s2c.play.GameJoinS2CPacket;
