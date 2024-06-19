@@ -1,4 +1,4 @@
-package anticope.serverinfo;
+package tmquan2508.serverinfo;
 
 import joptsimple.internal.Strings;
 import net.fabricmc.api.ModInitializer;
@@ -101,7 +101,7 @@ public class ServerInfo implements ModInitializer {
             print(createEntry("Difficulty", mc.world.getDifficulty().getTranslatableName(), false));
             print(createEntry("Local difficulty", String.format("%.2f", mc.world.getLocalDifficulty(mc.player.getBlockPos()).getLocalDifficulty()), false));
             print(createEntry("Day", String.format("%d", mc.world.getTimeOfDay() / 24000L), false));
-            print(createEntry("Permissions", formatPerms(mc.player), false));   
+            print(createEntry("Permissions", formatPerms(mc.player), false));
         }
 
         float tps = handler.getTickRate();
