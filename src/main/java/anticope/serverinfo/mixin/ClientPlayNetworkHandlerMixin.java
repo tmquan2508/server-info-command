@@ -1,6 +1,6 @@
-package anticope.serverinfo.mixin;
+package tmquan2508.serverinfo.mixin;
 
-import anticope.serverinfo.ServerInfo;
+import tmquan2508.serverinfo.ServerInfo;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.network.packet.s2c.play.GameJoinS2CPacket;
 import net.minecraft.network.packet.s2c.play.WorldTimeUpdateS2CPacket;
