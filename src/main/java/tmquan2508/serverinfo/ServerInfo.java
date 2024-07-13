@@ -40,9 +40,9 @@ public class ServerInfo implements ModInitializer {
             })));
         });
 
-        ClientPlayNetworking.registerGlobalReceiver(new Identifier("badlion", "mods"), (client, handler, buf, responseSender) -> {
-            ServerInfo.handler.onBadLionMods(buf);
-        });
+        // ClientPlayNetworking.registerGlobalReceiver(new Identifier("badlion", "mods"), (client, handler, buf, responseSender) -> {
+        //     ServerInfo.handler.onBadLionMods(buf);
+        // });
     }
 
     private void printPlugins() {
