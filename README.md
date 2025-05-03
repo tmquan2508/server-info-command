@@ -1,3 +1,5 @@
+# Rewrite version [Server Info Command Rewritten](https://github.com/tmquan2508/server-info-command-rewritten)
+
 # `/server` command
 
 Client side command that displays useful information about currently connected server.
